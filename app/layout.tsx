@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Somotex Nigeria',
+  title: 'SOMATEX Dealers Meetup 2025',
   description: 'Somotex Nigeria - A leading consumer durable distribution company in Nigeria',
   icons: {
     icon: '/somotex_logo2.jpg',

@@ -32,7 +32,7 @@ export function SuccessPage({ registrationData, onBackToHome }: SuccessPageProps
             <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-700 to-red-700 bg-clip-text text-transparent mb-2">
               Welcome!
             </h1>
-            <p className="text-sm text-gray-600">You're registered for somotex 2025</p>
+            <p className="text-sm text-gray-600">You're registered for SOMATEX Dealers Meetup 2025</p>
           </div>
 
           <div className="relative mb-6">

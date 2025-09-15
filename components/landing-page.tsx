@@ -28,7 +28,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
           className="text-2xl md:text-4xl font-bold text-white mb-3 text-balance drop-shadow-2xl"
           style={{ color: "#ffffff" }}
         >
-          {"somotex  Conference"}
+          {"SOMATEX Dealers Meetup 2025"}
         </h1>
 
         <p className="text-sm md:text-base mb-2 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
@@ -42,7 +42,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         <Button
           onClick={onStartRegistration}
           size="lg"
-          className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-[#003087] hover:bg-[#001f5c] text-white px-8 py-4 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
         >
           Register Now
           <Sparkles className="ml-2 h-4 w-4" />
