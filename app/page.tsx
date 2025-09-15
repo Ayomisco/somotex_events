@@ -19,7 +19,7 @@ export type RegistrationData = {
   }
 }
 
-export default function somotexEvent() {
+export default function () {
   const [currentStep, setCurrentStep] = useState<"landing" | "form" | "attire" | "success">("landing")
   const [registrationData, setRegistrationData] = useState<RegistrationData>({
     fullName: "",
