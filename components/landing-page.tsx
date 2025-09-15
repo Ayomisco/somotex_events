@@ -28,7 +28,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
           className="text-2xl md:text-4xl font-bold text-white mb-3 text-balance drop-shadow-2xl"
           style={{ color: "#ffffff" }}
         >
-          {"somotex Cultural Conference"}
+          {"somotex  Conference"}
         </h1>
 
         <p className="text-sm md:text-base mb-2 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
@@ -49,7 +49,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         </Button>
       </div>
 
-      <div className="absolute bottom-8 left-4 right-4 z-10">
+      {/* <div className="absolute bottom-8 left-4 right-4 z-10">
         <div className="flex justify-center space-x-4 opacity-60">
           <div className="w-12 h-12 rounded-full bg-orange-500/30 backdrop-blur-sm border border-white/30 flex items-center justify-center">
             <span className="text-white text-xs font-bold">YOR</span>
@@ -67,7 +67,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         <p className="text-center text-xs mt-2 font-light drop-shadow-xl" style={{ color: "#d1d5db" }}>
           {"Choose your cultural attire"}
         </p>
-      </div>
+      </div> */}
     </div>
   )
 }
