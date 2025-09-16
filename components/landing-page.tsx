@@ -9,33 +9,36 @@ interface LandingPageProps {
 
 export function LandingPage({ onStartRegistration }: LandingPageProps) {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gray-900">
+    // <div className="min-h-screen relative overflow-hidden bg-gray-900">
+    <div className="min-h-screen relative overflow-hidden ">
       <div className="absolute inset-0">
         <img
-          src="/nigerian-traditional-cultural-attire-celebration-c.jpg"
+          src="main_bg.png"
           alt="Cultural celebration"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover "
         />
-        <div className="absolute inset-0 bg-black/80" />
+        {/* <div className="absolute inset-0 bg-black/80" /> */}
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <img src="/somotex_logo2.jpg" alt="somotex Nigeria" className="mx-auto h-12 w-auto mb-6 opacity-90" />
-        </div>
+        </div> */}
 
-        <h1
-          className="text-2xl md:text-4xl font-bold text-white mb-3 text-balance drop-shadow-2xl"
+        {/* <h1
+          className="text-2xl md:text-4xl font-bold mt-18 text-white mb-3 text-balance drop-shadow-2xl"
           style={{ color: "#ffffff" }}
         >
           {"SOMATEX Dealers Meetup 2025"}
-        </h1>
+        </h1> */}
+      <br /> <br /> <br /> <br /><br />      <br /> <br /> <br /> <br /><br />
 
-        <p className="text-sm md:text-base mb-2 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
+
+        <p className="text-sm md:text-base mb-2 mt-12 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
           {"October 15, 2025 • Lagos"}
         </p>
 
-        <p className="text-xs md:text-sm mb-12 max-w-xs text-balance drop-shadow-xl" style={{ color: "#e5e7eb" }}>
+        <p className="text-xs md:text-sm mb-7 max-w-xs text-balance drop-shadow-xl" style={{ color: "#e5e7eb" }}>
           {"Celebrating Nigerian Heritage & Business Excellence"}
         </p>
 

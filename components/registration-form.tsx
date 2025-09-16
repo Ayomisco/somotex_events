@@ -110,26 +110,26 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
   }
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-green-50" />
-      <div className="absolute inset-0 opacity-5 bg-[url('/nigerian-traditional-cultural-attire-celebration-c.jpg')] bg-cover bg-center" />
+    <div className="min-h-screen relative overflow-hidden bg-[#003087]">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#003087] via-[#003087] to-[#001f5c]" />
+      <div className="absolute inset-0 opacity-10 bg-[url('/nigerian-traditional-cultural-attire-celebration-c.jpg')] bg-cover bg-center" />
 
       <div className="relative z-10 py-6 px-4">
         <div className="max-w-md mx-auto">
-          <Button variant="ghost" onClick={onBack} className="mb-4 text-gray-600 hover:text-gray-800 p-2">
-            <ArrowLeft className="h-4 w-4 mr-1" />
+          <Button variant="ghost" onClick={onBack} className="mb-4 text-white hover:text-[#e0eaff] p-2">
+            <ArrowLeft className="h-4 w-4 mr-1 text-white drop-shadow-lg" />
             <span className="text-sm">Back</span>
           </Button>
 
           <div className="text-center mb-8">
-            <h1 className="text-xl font-bold text-gray-800 mb-1">{"Registration"}</h1>
-            <p className="text-xs text-gray-600">{"Fill your details below"}</p>
+            <h1 className="text-xl font-bold text-white mb-1 drop-shadow-lg">{"Registration"}</h1>
+            <p className="text-xs text-[#e0eaff]">{"Fill your details below"}</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-1">
-              <Label htmlFor="fullName" className="flex items-center gap-2 text-sm text-gray-700">
-                <User className="h-3 w-3 text-orange-600" />
+              <Label htmlFor="fullName" className="flex items-center gap-2 text-sm text-white drop-shadow">
+                <User className="h-4 w-4 text-white drop-shadow-lg" />
                 Full Name
               </Label>
               <Input
@@ -138,14 +138,14 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 placeholder="Your full name"
                 value={formData.fullName}
                 onChange={(e) => handleInputChange("fullName", e.target.value)}
-                className={`border-gray-200 focus:border-orange-500 text-sm ${errors.fullName ? "border-red-400" : ""}`}
+                className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.fullName ? "border-red-400" : ""}`}
               />
               {errors.fullName && <p className="text-xs text-red-500">{errors.fullName}</p>}
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="businessName" className="flex items-center gap-2 text-sm text-gray-700">
-                <Building className="h-3 w-3 text-orange-600" />
+              <Label htmlFor="businessName" className="flex items-center gap-2 text-sm text-white drop-shadow">
+                <Building className="h-4 w-4 text-white drop-shadow-lg" />
                 Business Name
               </Label>
               <Input
@@ -154,14 +154,14 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 placeholder="Your business name"
                 value={formData.businessName}
                 onChange={(e) => handleInputChange("businessName", e.target.value)}
-                className={`border-gray-200 focus:border-orange-500 text-sm ${errors.businessName ? "border-red-400" : ""}`}
+                className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.businessName ? "border-red-400" : ""}`}
               />
               {errors.businessName && <p className="text-xs text-red-500">{errors.businessName}</p>}
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="email" className="flex items-center gap-2 text-sm text-gray-700">
-                <Mail className="h-3 w-3 text-orange-600" />
+              <Label htmlFor="email" className="flex items-center gap-2 text-sm text-white drop-shadow">
+                <Mail className="h-4 w-4 text-white drop-shadow-lg" />
                 Email Address
               </Label>
               <Input
@@ -170,14 +170,14 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 placeholder="your@email.com"
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                className={`border-gray-200 focus:border-orange-500 text-sm ${errors.email ? "border-red-400" : ""}`}
+                className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.email ? "border-red-400" : ""}`}
               />
               {errors.email && <p className="text-xs text-red-500">{errors.email}</p>}
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="phoneNumber" className="flex items-center gap-2 text-sm text-gray-700">
-                <Phone className="h-3 w-3 text-orange-600" />
+              <Label htmlFor="phoneNumber" className="flex items-center gap-2 text-sm text-white drop-shadow">
+                <Phone className="h-4 w-4 text-white drop-shadow-lg" />
                 Phone Number
               </Label>
               <Input
@@ -186,14 +186,14 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 placeholder="+234 xxx xxx xxxx"
                 value={formData.phoneNumber}
                 onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
-                className={`border-gray-200 focus:border-orange-500 text-sm ${errors.phoneNumber ? "border-red-400" : ""}`}
+                className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.phoneNumber ? "border-red-400" : ""}`}
               />
               {errors.phoneNumber && <p className="text-xs text-red-500">{errors.phoneNumber}</p>}
             </div>
 
             <div className="space-y-1">
-              <Label htmlFor="businessLocation" className="flex items-center gap-2 text-sm text-gray-700">
-                <MapPin className="h-3 w-3 text-orange-600" />
+              <Label htmlFor="businessLocation" className="flex items-center gap-2 text-sm text-white drop-shadow">
+                <MapPin className="h-4 w-4 text-white drop-shadow-lg" />
                 Business Location
               </Label>
               <Select
@@ -201,7 +201,7 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 onValueChange={(value) => handleInputChange("businessLocation", value)}
               >
                 <SelectTrigger
-                  className={`border-gray-200 focus:border-orange-500 text-sm ${errors.businessLocation ? "border-red-400" : ""}`}
+                  className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.businessLocation ? "border-red-400" : ""}`}
                 >
                   <SelectValue placeholder="Select state" />
                 </SelectTrigger>
@@ -218,8 +218,14 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
 
             <Button
               type="submit"
-              className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 text-sm font-medium rounded-full mt-8"
+              className="w-full bg-white hover:bg-[#e0eaff] text-[#003087] py-3 text-sm font-bold rounded-full mt-8 shadow-lg transition-all duration-300"
             >
+              <span className="inline-block mr-2 align-middle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="10" fill="#003087" />
+                  <path d="M6 10.5L9 13.5L14 8.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
               Continue to Attire Selection
             </Button>
           </form>
