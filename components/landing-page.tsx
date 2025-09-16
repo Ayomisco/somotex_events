@@ -26,7 +26,8 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center
+        md:items-center md:text-center md:pl-35 md:max-w-lg">
         {/* <div className="mb-8">
           <img src="/somotex_logo2.jpg" alt="somotex Nigeria" className="mx-auto h-12 w-auto mb-6 opacity-90" />
         </div> */}
@@ -40,18 +41,18 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
       <br /> <br /> <br /> <br /><br />  <br /> <br />    <br /> <br /> <br /> <br /><br />
 
 
-        <p className="text-sm md:text-base mb-2 mt-12 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
+        <p className="text-sm md:text-base mb-2 mt-6 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
           {"October 15, 2025 • Lagos"}
         </p>
-
-        <p className="text-xs md:text-sm mb-7 max-w-xs text-balance drop-shadow-xl" style={{ color: "#e5e7eb" }}>
+          
+        <p className="text-xs md:text-sm mb-4  drop-shadow-xl" style={{ color: "#e5e7eb" }}>
           {"Celebrating Nigerian Heritage & Business Excellence"}
         </p>
 
         <Button
           onClick={onStartRegistration}
           size="lg"
-          className="bg-[#003087] hover:bg-[#001f5c] text-white px-8 py-4 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-[#003087] hover:bg-[#001f5c] text-white px-8 py-2 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           style={{ boxShadow: "0 4px 24px 0 rgba(255,255,255,0.5)" }}
         >
           Register Now
