@@ -16,7 +16,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         <img
           src="/main_bg.png"
           alt="Cultural celebration"
-          className="block md:hidden absolute top-0 left-0 w-screen h-full object-cover object-top"
+          className="block md:hidden absolute top-0 left-0 w-screen h-screen object- "
         />
         {/* Desktop background */}
         <img
@@ -37,7 +37,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         >
           {"SOMATEX Dealers Meetup 2025"}
         </h1> */}
-      <br /> <br /> <br /> <br /><br />      <br /> <br /> <br /> <br /><br />
+      <br /> <br /> <br /> <br /><br />  <br /> <br />    <br /> <br /> <br /> <br /><br />
 
 
         <p className="text-sm md:text-base mb-2 mt-12 font-light drop-shadow-xl" style={{ color: "#f3f4f6" }}>
@@ -52,6 +52,7 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
           onClick={onStartRegistration}
           size="lg"
           className="bg-[#003087] hover:bg-[#001f5c] text-white px-8 py-4 text-base font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          style={{ boxShadow: "0 4px 24px 0 rgba(255,255,255,0.5)" }}
         >
           Register Now
           <Sparkles className="ml-2 h-4 w-4" />
