@@ -43,26 +43,20 @@ export function SuccessPage({ registrationData, onBackToHome }: SuccessPageProps
                   </div>
                 </div>
               )}
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center gap-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full py-2 px-4 w-full">
-            <Mail className="h-4 w-4 text-white drop-shadow-lg" />
-            <p className="text-sm text-white">Confirmation sent to your email</p>
-          </div>
-
-          <div className="space-y-2 mb-6 w-full">
-            <div className="flex items-center gap-3 text-white">
-              <Calendar className="h-5 w-5 text-white drop-shadow-lg" />
-              <span className="text-sm font-medium">October 15, 2025</span>
-            </div>
-            <div className="flex items-center gap-3 text-white">
-              <Clock className="h-5 w-5 text-white drop-shadow-lg" />
-              <span className="text-sm font-medium">9:00 AM</span>
-            </div>
-            <div className="flex items-center gap-3 text-white">
-              <MapPin className="h-5 w-5 text-white drop-shadow-lg" />
-              <span className="text-sm font-medium">Lagos Convention Centre</span>
+              <div className="space-y-2 mt-4">
+                <div className="flex items-center gap-3 text-white justify-center">
+                  <Calendar className="h-5 w-5 text-white drop-shadow-lg" />
+                  <span className="text-sm font-medium">October 15, 2025</span>
+                </div>
+                <div className="flex items-center gap-3 text-white justify-center">
+                  <Clock className="h-5 w-5 text-white drop-shadow-lg" />
+                  <span className="text-sm font-medium">9:00 AM</span>
+                </div>
+                <div className="flex items-center gap-3 text-white justify-center">
+                  <MapPin className="h-5 w-5 text-white drop-shadow-lg" />
+                  <span className="text-sm font-medium">Lagos Convention Centre</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -73,6 +67,10 @@ export function SuccessPage({ registrationData, onBackToHome }: SuccessPageProps
             <Home className="h-5 w-5 mr-2 text-white drop-shadow-lg" />
             Back to Home
           </Button>
+        </div>
+        <div className="flex items-center justify-center gap-2 mt-6 bg-white/10 backdrop-blur-sm rounded-2xl py-3 px-4 w-full">
+          <Mail className="h-4 w-4 text-white drop-shadow-lg" />
+          <p className="text-sm text-white">Your invitation has been sent to your email</p>
         </div>
       </div>
     </div>

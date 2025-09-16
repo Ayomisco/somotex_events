@@ -12,12 +12,18 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
     // <div className="min-h-screen relative overflow-hidden bg-gray-900">
     <div className="min-h-screen relative overflow-hidden ">
       <div className="absolute inset-0">
+        {/* Mobile background */}
         <img
-          src="main_bg.png"
+          src="/main_bg.png"
           alt="Cultural celebration"
-          className="w-full h-full object-cover "
+          className="block md:hidden w-full h-full object-cover"
         />
-        {/* <div className="absolute inset-0 bg-black/80" /> */}
+        {/* Desktop background */}
+        <img
+          src="/Somotex_desktop.png"
+          alt="Somotex desktop background"
+          className="hidden md:block w-full h-full object-cover"
+        />
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
