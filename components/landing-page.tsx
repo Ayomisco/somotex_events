@@ -16,13 +16,13 @@ export function LandingPage({ onStartRegistration }: LandingPageProps) {
         <img
           src="/main_bg.png"
           alt="Cultural celebration"
-          className="block md:hidden w-full h-full object-cover"
+          className="block md:hidden absolute inset-0 w-full h-full object-cover"
         />
         {/* Desktop background */}
         <img
           src="/Somotex_desktop.png"
           alt="Somotex desktop background"
-          className="hidden md:block w-full h-full object-cover"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover"
         />
       </div>
 
