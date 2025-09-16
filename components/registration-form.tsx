@@ -201,7 +201,7 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
                 onValueChange={(value) => handleInputChange("businessLocation", value)}
               >
                 <SelectTrigger
-                  className={`border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#e0eaff] ${errors.businessLocation ? "border-red-400" : ""}`}
+                  className={`w-full border-[#e0eaff] focus:border-white text-sm bg-[#002060] text-white placeholder:text-[#003087] ${errors.businessLocation ? "border-red-400" : ""}`}
                 >
                   <SelectValue placeholder="Select state" />
                 </SelectTrigger>
