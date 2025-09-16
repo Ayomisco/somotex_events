@@ -84,19 +84,19 @@ export function AttireSelection({ onSelect, onBack }: AttireSelectionProps) {
   const currentAttire = culturalAttires[currentIndex]
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-orange-50 via-white to-green-50" />
+    <div className="min-h-screen relative overflow-hidden bg-[#003087]">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#003087] via-[#003087] to-[#001f5c]" />
 
-      <div className="relative z-10 py-4 px-4">
+  <div className="relative z-10 py-4 px-4">
         <div className="max-w-sm mx-auto">
-          <Button variant="ghost" onClick={onBack} className="mb-4 text-gray-600 hover:text-gray-800 p-2">
-            <ArrowLeft className="h-4 w-4 mr-1" />
+          <Button variant="ghost" onClick={onBack} className="mb-4 text-white hover:text-[#e0eaff] p-2">
+            <ArrowLeft className="h-4 w-4 mr-1 text-white drop-shadow-lg" />
             <span className="text-sm">Back</span>
           </Button>
 
           <div className="text-center mb-4">
-            <h1 className="text-lg font-bold text-gray-800 mb-1">Choose Your Attire</h1>
-            <p className="text-xs text-gray-500">Swipe left or right to explore</p>
+            <h1 className="text-lg font-bold text-white mb-1 drop-shadow-lg">Choose Your Attire</h1>
+            <p className="text-xs text-[#e0eaff]">Swipe left or right to explore</p>
           </div>
 
           <div
@@ -106,37 +106,37 @@ export function AttireSelection({ onSelect, onBack }: AttireSelectionProps) {
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
-            <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <div className="bg-[#002060] rounded-3xl shadow-xl overflow-hidden border border-[#e0eaff]">
               <div className="relative">
                 <img
                   src={currentAttire.image || "/placeholder.svg"}
                   alt={currentAttire.name}
-                  className="w-full h-96 object-cover"
+                  className="w-full h-96 object-cover border-b-4 border-[#003087]"
                 />
 
                 {selectedAttire?.name === currentAttire.name && (
-                  <div className="absolute top-4 right-4 bg-green-500 text-white rounded-full p-2">
+                  <div className="absolute top-4 right-4 bg-[#003087] text-white rounded-full p-2">
                     <Check className="h-4 w-4" />
                   </div>
                 )}
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{currentAttire.name}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">{currentAttire.description}</p>
+                <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">{currentAttire.name}</h3>
+                <p className="text-sm text-[#e0eaff] leading-relaxed mb-6">{currentAttire.description}</p>
 
                 <Button
                   onClick={() => setSelectedAttire(currentAttire)}
                   variant={selectedAttire?.name === currentAttire.name ? "default" : "outline"}
-                  className={`w-full text-sm py-3 rounded-full font-medium ${
+                  className={`w-full text-sm py-3 rounded-full font-bold shadow-[0_4px_24px_0_rgba(255,255,255,0.5)] transition-all duration-300 ${
                     selectedAttire?.name === currentAttire.name
-                      ? "bg-green-600 hover:bg-green-700 text-white"
-                      : "border-gray-200 hover:border-orange-500 hover:bg-orange-50"
+                      ? "bg-[#003087] hover:bg-[#001f5c] text-white"
+                      : "border-[#e0eaff] hover:border-[#003087] hover:bg-[#002060] text-white"
                   }`}
                 >
                   {selectedAttire?.name === currentAttire.name ? (
                     <>
-                      <Check className="h-4 w-4 mr-2" />
+                      <Check className="h-4 w-4 mr-2 text-white drop-shadow-lg" />
                       Selected
                     </>
                   ) : (
@@ -151,8 +151,8 @@ export function AttireSelection({ onSelect, onBack }: AttireSelectionProps) {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    index === currentIndex ? "bg-orange-600 scale-125" : "bg-gray-300"
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 shadow-[0_2px_8px_0_rgba(255,255,255,0.3)] ${
+                    index === currentIndex ? "bg-[#003087] scale-125" : "bg-[#e0eaff]"
                   }`}
                 />
               ))}
@@ -160,14 +160,20 @@ export function AttireSelection({ onSelect, onBack }: AttireSelectionProps) {
           </div>
 
           {selectedAttire && (
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-200">
+            <div className="bg-gradient-to-r from-[#003087] to-[#001f5c] rounded-2xl p-6 border border-[#e0eaff] shadow-lg">
               <div className="text-center">
-                <p className="text-sm text-green-700 mb-1">Ready to proceed with</p>
-                <p className="text-lg font-bold text-green-800 mb-4">{selectedAttire.name}</p>
+                <p className="text-sm text-white mb-1">Ready to proceed with</p>
+                <p className="text-lg font-bold text-[#e0eaff] mb-4">{selectedAttire.name}</p>
                 <Button
                   onClick={handleSelect}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-4 text-base font-semibold rounded-full shadow-lg"
+                  className="w-full bg-white hover:bg-[#e0eaff] text-[#003087] py-4 text-base font-bold rounded-full shadow-[0_4px_24px_0_rgba(255,255,255,0.5)] transition-all duration-300"
                 >
+                  <span className="inline-block mr-2 align-middle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="10" r="10" fill="#003087" />
+                      <path d="M6 10.5L9 13.5L14 8.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
                   Complete Registration
                 </Button>
               </div>

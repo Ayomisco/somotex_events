@@ -218,12 +218,12 @@ export function RegistrationForm({ onSubmit, onBack }: RegistrationFormProps) {
 
             <Button
               type="submit"
-              className="w-full bg-white hover:bg-[#e0eaff] text-[#003087] py-3 text-sm font-bold rounded-full mt-8 shadow-lg transition-all duration-300"
+              className="w-full bg-[#003087] hover:bg-[#001f5c] text-white py-3 text-sm font-bold rounded-full mt-8 shadow-[0_4px_24px_0_rgba(255,255,255,0.5)] transition-all duration-300"
             >
               <span className="inline-block mr-2 align-middle">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="10" cy="10" r="10" fill="#003087" />
-                  <path d="M6 10.5L9 13.5L14 8.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="10" cy="10" r="10" fill="white" />
+                  <path d="M6 10.5L9 13.5L14 8.5" stroke="#003087" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
               Continue to Attire Selection
